@@ -27,8 +27,7 @@ pub struct RequestUserInputArgs {
 
 #[derive(Debug, Clone, Deserialize, Serialize, PartialEq, Eq, JsonSchema, TS)]
 pub struct RequestUserInputAnswer {
-    pub selected: Vec<String>,
-    pub other: Option<String>,
+    pub answer: String,
 }
 
 #[derive(Debug, Clone, Deserialize, Serialize, PartialEq, Eq, JsonSchema, TS)]
